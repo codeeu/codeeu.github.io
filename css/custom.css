@@ -1,0 +1,63 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-weight: 600;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #2E75B3;
+  background-color: transparent;
+}
+
+.navbar .nav > li > a {
+    color:  #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #2E75B3;
+  background-color: transparent;
+}
+
+
+.jumbotron {
+  background-color: #EEEEEE;
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #000;
+}
+
+.jumbotron h1 {
+  font-size: 2em;
+  color: #2E75B3;
+}
+
+
+.main-text {
+  padding-top: 20px;
+  padding-top: 20px;
+  line-height: 2;
+}
+
+.main-text p {
+  font-size: 1.4em;
+  font-weight: 300;
+  line-height: 1.5;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+footer {
+  margin-left: 15px;
+  font-weight: 200; 
+}
