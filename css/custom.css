@@ -64,5 +64,16 @@ body {
 
 footer {
   margin-left: 15px;
+  margin-right: 15px;
   font-weight: 200; 
+}
+
+
+/* mobile adjustments
+-------------------------------------------------- */
+
+@media (max-width: 480px) {
+  #footer-icons {
+    margin-top: 20px;
+  }
 }
