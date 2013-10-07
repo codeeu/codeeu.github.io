@@ -1,3 +1,11 @@
 name: Europe Code Week
 markdown: redcarpet
 pygments: true
+
+contact:
+    email: europecodes@gmail.com
+    twitter: CodeWeekEU
+    facebook: pages/Europe-Code-Week/377506999042215
+    github: codeeu
+
+country-list: [austria, belgium, bulgaria, croatia, cyprus, czech-republic, denmark, estonia, finland, france, germany, greece, hungary, ireland, italy, latvia, lithuania, luxembourg, malta, netherlands, poland, portugal, romania, slovakia, slovenia, spain, sweden, united-kingdom]
