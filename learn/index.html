@@ -1,0 +1,24 @@
+---
+layout: page
+title: Learn how to code
+---
+
+			<p>Join one of the #codeEU events in your country or organize your own!</p>
+
+			<div id="country-list">
+				{% for cat in site.country-list %}
+					<strong>{% if cat == "czech_republic" %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in Czech Republic">Czech Republic</a>
+					{% elsif cat == "united_kingdom" %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in United Kingdom">United Kingdom</a>
+					{% else %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in {{ cat | capitalize }}">{{ cat | capitalize }}</a>
+					{% endif %}</strong>
+				{% endfor %}
+			</div>
+
+			<h2>Global partners and sponsors</h2>
+
+			<p>Wouldn't it be fancy to have your name listed here? <a href="mailto:{{site.contact.email}}">Send us an email</a> if you're interested in becoming a global #codeEU partner or sponsor!</p>
+
+        	

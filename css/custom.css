@@ -68,6 +68,21 @@ footer {
 }
 
 
+#country-list {
+  font-size: 1.4em;
+  font-weight: 300;
+  column-count:4; 
+  -moz-column-count:4; 
+  -webkit-column-count:4; 
+  column-gap:1em; 
+  -moz-column-gap:1em; 
+  -webkit-column-gap:1em;
+}
+#country-list a {
+   display: block;
+} 
+   
+
 /* mobile adjustments
 -------------------------------------------------- */
 
@@ -75,4 +90,12 @@ footer {
   #footer-icons {
     margin-top: 20px;
   }
+  #country-list {
+  column-count:2; 
+  -moz-column-count:2; 
+  -webkit-column-count:2; 
+  column-gap:0.5em; 
+  -moz-column-gap:0.5em; 
+  -webkit-column-gap:0.5em;
+}
 }
