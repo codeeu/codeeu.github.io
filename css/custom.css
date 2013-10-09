@@ -61,6 +61,11 @@ body {
   -webkit-margin-end: 0px;
 }
 
+ul {
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
 footer {
   margin-left: 15px;
   margin-right: 15px;
