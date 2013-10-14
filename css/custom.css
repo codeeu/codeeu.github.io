@@ -86,7 +86,21 @@ footer {
 #country-list a {
    display: block;
 } 
-   
+
+.event li{
+  font-size: 1.2em;
+  font-weight: 300;
+} 
+
+.event a {
+  font-size: 1.4em;
+  font-weight: 500;
+} 
+
+.event-title {
+  font-weight: 500;
+
+}  
 
 /* mobile adjustments
 -------------------------------------------------- */
