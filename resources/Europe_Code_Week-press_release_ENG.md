@@ -15,6 +15,7 @@ Europe Code Week was launched by Neelie Kroes' Young Advisors with the support f
 **Europe Code Week, taking place between November 25 and 30 all over Europe, is an open source initiative, aiming to connect initiatives that encourage European citizens to learn more about the art and science of computer programming.**
 
 Website: http://codeweek.eu
+
 Digital Agenda for Europe - Young Advisors: http://ec.europa.eu/digital-agenda/en/young-advisors
 
 Contact: europecodes@gmail.com 
