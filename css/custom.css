@@ -102,6 +102,13 @@ footer {
 
 }  
 
+.blog-divider {
+  height: 2px;
+  border: none;
+  color: #2E75B3;
+  background-color: #2E75B3;
+  }
+
 /* mobile adjustments
 -------------------------------------------------- */
 
