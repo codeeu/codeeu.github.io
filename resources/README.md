@@ -8,3 +8,6 @@ Main press release:
 
 Local translations welcome, just add a folder here for your own language.
 
+## Resources around the web
+
+- [Europe Code Week presentation in Croatian](http://www.os-prva-ck.skole.hr/upload/os-prva-ck/images/static3/1050/attachment/Europe_Code_Week-presentation_CRO.pdf)
