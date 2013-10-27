@@ -1,15 +1,12 @@
 ---
-layout: default
+layout: header
 ---
- <div class="main-text">
-    <div class="container">	
-		<div class="row">
-        	<div class="col-sm-12">
-        		<h1>{{ page.title }}</h1>
-				<span>Published on {{ page.date | date_to_string }}</span>
-				<p>{{ content }}</p>
-				<hr class="blog-divider"/>
-			</div>
-        </div>
-    </div>
-</div>
+
+<section class="content post wrap">
+  <div class="post-info">
+    <h1>{{ page.title }}</h1>
+    <span>Published on {{ page.date | date_to_string }}</span>
+  </div>
+
+  {{ content }}
+</section>
