@@ -1,0 +1,215 @@
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+
+body {
+  background: #f2f8ff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  letter-spacing: 0.5px;
+}
+
+.wrap, .inner {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/* Tidbits */
+
+.button-well {
+  padding: 20px 0;
+}
+
+.button, a.button,
+    a.button:link, a.button:visited {
+  display: inline-block;
+  background: #0f6abc;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 24px;
+  text-shadow: #083e6f 0px 1px 1px;
+  box-shadow: #d0d0d0 0px 2px 2px;
+}
+
+a.button:hover {
+  background: #4e832f;
+  text-shadow: #31521e 0px 1px 1px;
+}
+
+a.button:active {
+  border-top: 2px solid #f2f8ff;
+  box-shadow: none;
+}
+
+section {
+  font-size: 20px;
+  line-height: 32px;
+  padding: 25px 0;
+}
+section p {
+  padding: 10px 0;
+}
+section h1 {
+  font-size: 34px;
+  padding: 30px 0 25px;
+  text-transform: uppercase;
+}
+
+a, a:link, a:visited {
+  color: #0f6abc;
+  text-decoration: underline;
+}
+a:hover, a:active {
+  color: #073762;
+}
+
+/* Header */
+
+header.small {
+  background: #0068bf url('/images/header.jpg') no-repeat center center;;
+  display: block;
+  color: #fff;
+  height: 145px;
+}
+header.small .inner {
+  overflow: hidden;
+  padding: 20px 0;
+}
+header.small h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: #002b4f 0px 1px 1px;
+  padding: 0;
+  line-height: 26px;
+  float: left;
+}
+header.small h1 a, header.small h1 a:link, header.small h1 a:visited {
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  color: #fff;
+}
+header.small h1 a span, header.small h1 a:link span, header.small h1 a:visited span {
+  color: #bcdbff;
+}
+header.small h2 {
+  float: right;
+  text-align: right;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+
+/* Intro */
+
+#intro {
+  height: 655px;
+  padding: 0;
+  background: #0068bf url('/images/europe.jpg') no-repeat center center;
+  color: #fff;
+  font-size: 32px;
+  line-height: 55px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+#intro .inner {
+  width: 1020px;
+  margin: 0 auto 20px;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+#intro header {
+  display: block;
+  float: left;
+  color: #fff;
+  text-align: left;
+  width: 360px;
+}
+
+#intro #intro-description {
+  float: right;
+  width: 600px;
+}
+
+#intro header h1 {
+  font-size: 54px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: #002b4f 0px 1px 1px;
+  padding: 20px 0;
+  line-height: 60px;
+}
+
+#intro header h1 span {
+  color: #bcdbff;
+}
+
+#intro header h2 {
+  padding: 10px 0;
+  font-size: 28px;
+}
+
+header h2 a, header h2 a:link, header h2 a:visited {
+  color: #fff;
+}
+header h2 a:hover, header h2 a:active {
+  color: #bcdbff;
+}
+
+#intro .button, #intro a.button,
+    #intro a.button:link, #intro a.button:visited {
+  background: #fff;
+  color: #000;
+  padding: 5px 24px;
+  text-shadow: #f6f6f6 0px 1px 1px;
+  box-shadow: #083e6f 0px 2px 2px;
+}
+
+#intro a.button:hover {
+  background: #bcdbff;
+  text-shadow: #a0bde0 0px 1px 1px;
+}
+
+#intro a.button:active {
+  border-top: 2px solid #0f6abc;
+  box-shadow: none;
+}
+
+
+/* Footer */
+
+footer {
+  background: #0f6abc;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer .inner {
+  overflow: hidden;
+}
+
+footer p {
+  float: left;
+  padding: 25px 0;
+  font-size: 16px;
+  line-height: 30px;
+}
+footer p a, footer p a:link, footer p a:visited {
+  color: #bcdbff;
+}
+
+footer a.ec-logo {
+  display: block;
+  float: right;
+  text-decoration: none;
+  text-indent: -9999px;
+  width: 135px;
+  height: 95px;
+  background: #fff url('ec-logo.png') no-repeat center center;
+  padding: 8px;
+  margin: 5px;
+}
+
