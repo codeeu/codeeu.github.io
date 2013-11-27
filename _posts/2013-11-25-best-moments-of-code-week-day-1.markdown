@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Best moments of the first #codeEU day"
+title:  "Best moments of the 1st #codeEU day: kids love making games, not just playing them"
 date:   2013-11-25 23:25:42
 categories: news
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Best moments of the second #codeEU day"
+title:  "Best moments of the 2nd #codeEU day: never too old to code"
 date:   2013-11-26 23:59:23
 categories: news
 ---
