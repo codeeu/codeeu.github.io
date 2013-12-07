@@ -9,7 +9,7 @@ categories: news
 
 > _"During code week I have been working with the student’s to code a computer character to draw a football pitch and add to players to our game. Unfortunately I also did not know how to do this so we had to learn together. ... Quite often it was the student’s teaching me!"_
 
-And now we're happy to share the EU Code Week video created at GEMS - Etoy during #codeEU, which shows a lot of different tools being used and, most importantly, a lot of happy kids, who are learning important digital skills.
+And now we're happy to share the [EU Code Week video created at GEMS - Etoy](https://vimeo.com/81186435) during #codeEU, which shows a lot of different tools being used and, most importantly, a lot of happy kids, who are learning important digital skills.
 
 <iframe src="//player.vimeo.com/video/81186435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
