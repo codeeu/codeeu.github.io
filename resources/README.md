@@ -4,7 +4,7 @@ This folder includes various resources that can be used to spread the word about
 
 Main press release:
 
-- [Europe Code Week press release](https://github.com/codeeu/codeeu.github.io/blob/master/resources/Europe_Code_Week-press_release_ENG.md)
+- [Europe Code Week Returns from October 11 to 17, 2014](https://github.com/codeeu/codeeu.github.io/blob/master/resources/Europe_Code_Week_2014-press_release_ENG.md)
 
 Local translations welcome, just add a folder here for your own language.
 
