@@ -72,7 +72,9 @@ header.small {
 }
 header.small .inner {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 20px 0 0;
+  margin: 0 auto 20px;
+  position: relative;
 }
 header.small h1 {
   font-size: 20px;
@@ -95,8 +97,8 @@ header.small h1 a span, header.small h1 a:link span, header.small h1 a:visited s
 header.small h2 {
   float: right;
   text-align: right;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 15px;
+  line-height: 22px;
 }
 
 
@@ -178,6 +180,46 @@ header h2 a:hover, header h2 a:active {
   box-shadow: none;
 }
 
+/* Small Nav */
+
+nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+nav ul {
+  text-align: right;
+/*  padding: 10px 0;*/
+}
+nav ul li {
+  display: inline-block;
+  padding: 0 6px 6px;
+}
+nav ul li a, nav ul li a:link, nav ul li a:visited {
+  color: #fff
+}
+
+/* Intro nav */
+
+#intro nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+#intro nav li {
+  padding: 6px 8px;
+}
+
+#intro nav li a, #intro nav li a:link, #intro nav li a:visited {
+  color: #bcdbff;
+}
+#intro nav li a, #intro nav li a:link, #intro nav li a:visited {
+  color: #bcdbff;
+}
 
 /* Footer */
 
@@ -212,4 +254,3 @@ footer a.ec-logo {
   padding: 8px;
   margin: 5px;
 }
-
