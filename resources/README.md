@@ -1,5 +1,11 @@
 # Europe Code Week Resources
 
+---
+
+**NEW: All latest resources are now available at: [https://github.com/codeeu/codeeu-resources](https://github.com/codeeu/codeeu-resources)**
+
+---
+
 This folder includes various resources that can be used to spread the word about Europe Code Week.
 
 Main press release:
