@@ -1,0 +1,9 @@
+<nav>
+  <ul>
+    <li><a href="/code/">Why coding?</a></li>
+    <li><a href="http://events.codeweek.eu/">Events</a></li>
+    <li><a href="/learn/">Resources</a></li>
+    <li><a href="http://blog.codeweek.eu/">News</a></li>
+    <li><a href="/about/">About</a></li>
+  </ul>
+</nav>
