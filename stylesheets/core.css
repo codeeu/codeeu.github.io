@@ -1,4 +1,4 @@
-@import url('reset.css');
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400);
 
 body {
@@ -72,7 +72,7 @@ header.small {
 }
 header.small .inner {
   overflow: hidden;
-  padding: 20px 0 0;
+  padding: 0;
   margin: 0 auto 20px;
   position: relative;
 }
@@ -99,6 +99,10 @@ header.small h2 {
   text-align: right;
   font-size: 15px;
   line-height: 22px;
+}
+
+header.small h2 a, header.small h2 a:link, header.small h2 a:visited {
+  margin-top: 4px;
 }
 
 
@@ -155,6 +159,8 @@ header.small h2 {
 }
 
 header h2 a, header h2 a:link, header h2 a:visited {
+  display: block;
+  margin-top: 10px;
   color: #fff;
 }
 header h2 a:hover, header h2 a:active {
@@ -186,6 +192,7 @@ nav {
   position: absolute;
   bottom: 0;
   right: 0;
+  font-size: 16px;
 }
 nav ul {
   text-align: right;
