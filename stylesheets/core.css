@@ -17,10 +17,25 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1020px){
+  .wrap, .inner {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
 /* Tidbits */
 
 .button-well {
   padding: 20px 0;
+}
+
+@media (max-width: 1020px){
+  .button-well {
+    padding: 10px 0;
+  }
 }
 
 .button, a.button,
@@ -64,6 +79,14 @@ section h1 {
   font-size: 34px;
   padding: 15px 0;
   text-transform: uppercase;
+}
+
+@media (max-width: 1020px){
+  section h1 {
+    padding: 0;
+    font-size: 22px;
+    margin-top: 10px;
+  }
 }
 
 a, a:link, a:visited {
@@ -115,6 +138,24 @@ header h2 a, header h2 a:link, header h2 a:visited {
 }
 header h2 a:hover, header h2 a:active {
   color: #bcdbff;
+}
+
+@media (max-width: 1020px){
+  header.small, header.small .inner {
+    height: auto;
+    overflow: visible;
+  }
+  header.small h1 {
+    float: none;
+  }
+  header.small h1 a {
+    margin: 0 auto;
+  }
+  header.small h2 {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
 }
 
 /* Intro */
@@ -202,6 +243,53 @@ header h2 a:hover, header h2 a:active {
   padding-top: 30px;
 }
 
+@media (max-width: 1020px){
+  #intro {
+    font-size: 16px;
+    line-height: 24px;
+    height: auto;
+  }
+
+  #intro .inner {
+    width: 100%;
+    padding: 0px;
+  }
+
+  #intro header {
+    margin-top: 20px;
+  }
+
+  #intro header h1 {
+    background: url('/images/small-logo.png') no-repeat top center;
+    height: 45px;
+    width: 240px;
+    margin: 0 auto;
+  }
+
+  #intro header h2 {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 0;
+  }
+  #intro header h2 a {
+    display: inline;
+    margin-top: 6px;
+  }
+  #intro header h2 a:before {
+    content: "•";
+    text-decoration: none;
+    padding-right: 4px;
+    display: inline-block;
+  }
+
+  #intro-description {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+
 /* Small Nav */
 
 nav {
@@ -239,8 +327,25 @@ nav ul li a, nav ul li a:link, nav ul li a:visited {
 #intro nav li a, #intro nav li a:link, #intro nav li a:visited {
   color: #bcdbff;
 }
-#intro nav li a, #intro nav li a:link, #intro nav li a:visited {
-  color: #bcdbff;
+
+@media (max-width: 1020px){
+  nav, #intro nav {
+    position: static;
+    margin: 10px 16px;
+    padding: 0;
+    font-size: 14px;
+  }
+  nav ul {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav li, #intro nav li {
+    padding: 0 4px;
+  }
+  nav ul li a, nav ul li a:link, nav ul li a:visited {
+    color: #bcdbff;
+  }
 }
 
 /* Footer */
@@ -257,6 +362,14 @@ footer .team {
   line-height: 25px;
   text-align: right;
 }
+
+@media (max-width: 1020px){
+  footer .team {
+    padding: 10px 0 25px;
+    text-align: center;
+  }
+}
+
 footer a, footer a:link, footer a:visited {
   color: #bcdbff;
 }
@@ -289,4 +402,20 @@ footer ul.links li a.facebook {
 }
 footer ul.links li a.github {
   background-image: url('/images/links-github.png');
+}
+
+@media (max-width: 1020px){
+  footer ul.links {
+    text-align: center;
+    margin: 0 auto;
+    padding: 25px 0 10px;
+  }
+  footer ul.links li {
+    display: inline-block;
+    padding: 0px 8px;
+  }
+  footer ul.links li a {
+    display: inline-block;
+    padding-left: 28px;
+  }
 }
