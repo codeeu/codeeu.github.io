@@ -91,12 +91,12 @@ header.small .inner {
 }
 header.small h1 {
   margin: 0;
-  padding: 23px 0 0;
+  padding: 18px 0 0;
   float: left;
 }
 header.small h1 a, header.small h1 a:link, header.small h1 a:visited {
   display: block;
-  height: 35px;
+  height: 45px;
   width: 240px;
   padding: 0;
   text-indent: -9999px;
@@ -120,7 +120,7 @@ header h2 a:hover, header h2 a:active {
 /* Intro */
 
 #intro {
-  height: 500px;
+  height: 520px;
   padding: 0;
   background: #4489ca;
   color: #fff;
@@ -133,7 +133,7 @@ header h2 a:hover, header h2 a:active {
 #intro .inner {
   width: 1020px;
   margin: 0 auto 20px;
-  padding: 80px 0;
+  padding: 50px 0;
   overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ header h2 a:hover, header h2 a:active {
 
 #intro header h1 {
   display: block;
-  height: 250px;
+  height: 290px;
   width: 200px;
   text-indent: -9999px;
   background: url('/images/intro-logo.png') no-repeat top left;
@@ -196,6 +196,10 @@ header h2 a:hover, header h2 a:active {
   padding-top: 7px;
   padding-bottom: 3px;
   box-shadow: none;
+}
+
+#intro-description {
+  padding-top: 30px;
 }
 
 /* Small Nav */
