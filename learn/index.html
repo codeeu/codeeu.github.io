@@ -1,0 +1,21 @@
+---
+layout: page
+title: Learn how to code
+---
+
+			<div class="alert alert-danger">Note: This is an <strong>archive</strong> of main #codeEU events, which took place during the first Code Week from <strong>November 25 to 30, 2013</strong>. To add and view new events, please visit <strong><a href="http://events.codeweek.eu">the new events website</a></strong>.</div>
+
+			<div id="country-list">
+				{% for cat in site.country-list %}
+					<strong>{% if cat == "czech_republic" %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in Czech Republic">Czech Republic</a>
+					{% elsif cat == "united_kingdom" %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in United Kingdom">United Kingdom</a>
+					{% else %}
+						<a href="{{ cat }}" title="List of Europe Code Week events in {{ cat | capitalize }}">{{ cat | capitalize }}</a>
+					{% endif %}</strong>{% unless forloop.last %} - {% endunless %}
+				{% endfor %}
+			</div>
+
+
+        	
