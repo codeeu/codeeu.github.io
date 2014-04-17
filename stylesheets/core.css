@@ -1,5 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
-@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 /*
 Code Week Blue: #4489ca
@@ -7,7 +7,7 @@ Code Week Blue: #4489ca
 
 body {
   background: #f2f8ff;
-  font-family: 'Carrois Gothic', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 0.5px;
 }
