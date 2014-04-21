@@ -3,8 +3,25 @@ layout: page
 title: Resources and guides
 ---
 
-<p>To make running a Code Week event easier, we've collected together lesson plans, guides and other resources to help you out.</p>
+<p>To make running a <a href="http://events.codeweek.eu/guide/">Code Week event</a> easier, we've collected together lesson plans, guides and other resources to help you out.</p>
 
 <ul>
+	<li><strong><a href="http://www.codecademy.com/">Codecademy</a></strong>: Learn the basics of programming with interactive online tutorials.</li>
 
 </ul>
+
+<hr />
+
+<h2>Local resources</h2>
+
+<div id="country-list">
+	{% for cat in site.country-list-2014 %}
+		<strong>{% if cat == "czech_republic" %}
+			<a href="{{ cat }}" title="List of coding resources from Czech Republic">Czech Republic</a>
+		{% elsif cat == "united_kingdom" %}
+			<a href="{{ cat }}" title="List of coding resources from United Kingdom">United Kingdom</a>
+		{% else %}
+			<a href="{{ cat }}" title="List of coding resources from {{ cat | capitalize }}">{{ cat | capitalize }}</a>
+		{% endif %}</strong>{% unless forloop.last %} - {% endunless %}
+	{% endfor %}
+</div>
