@@ -403,6 +403,9 @@ footer ul.links li a.facebook {
 footer ul.links li a.github {
   background-image: url('/images/links-github.png');
 }
+footer ul.links li a.google {
+  background-image: url('/images/links-google.png');
+}
 
 @media (max-width: 1020px){
   footer ul.links {
