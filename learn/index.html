@@ -3,8 +3,7 @@ layout: page
 title: Learn how to code
 ---
 
-			<p>Explore the main #codeEU events, which took place during the first Code Week from November 25 to 30, 2013.</p> 
-			<p>We'll start adding new events by the end of March 2014.</p>
+			<div class="alert alert-danger">Note: This is an <strong>archive</strong> of main #codeEU events, which took place during the first Code Week from <strong>November 25 to 30, 2013</strong>. To add and view new events, please visit <strong><a href="http://events.codeweek.eu">the new events website</a></strong>.</div>
 
 			<div id="country-list">
 				{% for cat in site.country-list %}
@@ -14,7 +13,7 @@ title: Learn how to code
 						<a href="{{ cat }}" title="List of Europe Code Week events in United Kingdom">United Kingdom</a>
 					{% else %}
 						<a href="{{ cat }}" title="List of Europe Code Week events in {{ cat | capitalize }}">{{ cat | capitalize }}</a>
-					{% endif %}</strong>
+					{% endif %}</strong>{% unless forloop.last %} - {% endunless %}
 				{% endfor %}
 			</div>
 

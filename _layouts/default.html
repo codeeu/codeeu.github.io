@@ -1,73 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="description" content="October 11 - 17, 2014: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
-        <meta property="og:image" content="/img/codeEU-logo-100.png" />
+<!doctype html>
+<html>
+<head>
 
-        <title>{{ site.name }} - {{ page.title }}</title>
+  <style type="text/css">
+  @import url('/stylesheets/core.css');
+  </style>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="October 11 - 17, 2014: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
+  <meta property="og:image" content="/img/codeweekEU-logo-600.png" />
+  <title>Europe Code Week 2014 - {{ page.title }}</title>
 
-        <!-- Bootstrap 3 -->
-        <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
 
-        <!-- Glyphicons -->
-        <link href="/css/bootstrap/css/bootstrap.icon-large.min.css" rel="stylesheet">
+<body>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+  {{ content }}
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/custom.css">
-
-  </head>
-
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">Europe Code Week</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="/learn">Learn coding</a></li>
-            <li><a href="/map">Map of initiatives</a></li>
-            <li><a href="/code">Why coding?</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/news">News</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
+  <footer>
+    <div class="inner row">
+      <ul class="links col-md-4">
+        <li><a href="https://twitter.com/codeweekeu" title="@CodeWeekEU on Twitter" class="twitter">CodeWeekEU</a></li>
+        <li><a href="https://www.facebook.com/codeEU" title="Europe Code Week on Facebook" class="facebook">codeEU</a></li>
+        <li><a href="https://plus.google.com/+CodeweekEu/" title="Europe Code Week on Google+" class="google">codeEU</a></li>
+        <li><a href="https://github.com/codeeu" title="CodeEU on GitHub" class="github">codeeu</a></li>
+      </ul>
+      <div class="team links col-md-8">
+        A project by the <a href="http://ec.europa.eu/digital-agenda/en/young-advisors">Young Advisors Group</a> at the <a href="http://ec.europa.eu/index_en.htm">European Commission</a><br>
+        Help us with this website on <a href="https://github.com/codeeu/codeeu.github.io">GitHub</a>
       </div>
     </div>
+  </footer>
 
-
-
-
-          {{ content }}
-
-
-      <hr>
-
-      <footer>
-        <p>Created by you with some <a href="https://github.com/codeeu" target="_blank" alt="Contribute to the website by forking it on GitHub">GitHub and Jekyll magic</a>; icons by <a href="http://glyphicons.com/">Glyphicons</a> | <a href="https://twitter.com/search?q=%23codeEU&mode=realtime" target="_blank" alt="codeEU tweets">#codeEU</a> 
-          <span class="pull-right" id="footer-icons">
-            <a href="https://twitter.com/{{site.contact.twitter}}"><i class="icon-large icon-twitter"></i></a>
-            <a href="https://www.facebook.com/{{site.contact.facebook}}"><i class="icon-large icon-facebook"></i></a>
-            <a href="https://plus.google.com/100389357124183878121" rel="publisher"><i class="icon-large icon-google-plus"></i></a>
-            <a href="https://github.com/codeeu/codeeu.github.io"><i class="icon-large icon-github"></i></a>
-            <a href="/feed.xml"><i class="icon-large icon-rss"></i></a>
-          </span>
-        </p>
-      </footer>    
-    <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/css/bootstrap/js/bootstrap.min.js"></script>
-    </body>
+</body>
 </html>
