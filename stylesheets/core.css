@@ -140,6 +140,10 @@ header h2 a:hover, header h2 a:active {
   color: #bcdbff;
 }
 
+.active {
+  font-weight: bold;
+}
+
 @media (max-width: 1020px){
   header.small, header.small .inner {
     height: auto;
