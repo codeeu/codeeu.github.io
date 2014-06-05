@@ -1,7 +1,7 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 <nav>
   <ul>
-  	<li><a href="/sorry/">Events</a></li>
+  	<li><a href="http://events.codeweek.eu/">Events</a></li>
     <li><a {% if location == 'resources' %}class="active" {% endif %}href="/resources/">Resources</a></li>
     <li><a {% if location == 'code' %}class="active" {% endif %}href="/code/">Why coding?</a></li>
     <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
