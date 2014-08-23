@@ -11,6 +11,8 @@ title: Resources and guides
 	{% for cat in site.country-list-2014 %}
 		<strong>{% if cat == "czech_republic" %}
 			<a href="{{ cat }}" title="List of coding resources from Czech Republic">Czech Republic</a>
+		{% elsif cat == "isle_of_man" %}
+			<a href="{{ cat }}" title="List of coding resources from the Isle of Man">Isle of Man</a>
 		{% elsif cat == "united_kingdom" %}
 			<a href="{{ cat }}" title="List of coding resources from United Kingdom">United Kingdom</a>
 		{% else %}
