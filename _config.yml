@@ -14,3 +14,4 @@ country-list-2014: [austria, belarus, belgium, bulgaria, croatia, cyprus, czech_
 
 description: A week to celebrate coding in Europe
 url: http://codeweek.eu
+exclude: ["vendor"]
