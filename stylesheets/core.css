@@ -1,4 +1,5 @@
 @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
 /*
@@ -21,6 +22,10 @@ body {
   font-size: 0.8em;
   color: gray;
   margin-top: -10px;
+}
+
+.fa-inverse {
+  color: #4489ca;
 }
 
 @media (max-width: 1020px){
@@ -364,10 +369,11 @@ footer {
   background: #4489ca;
   color: #fff;
   margin-top: 40px;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 footer .team {
-  padding: 25px 0;
   font-size: 16px;
   line-height: 25px;
   text-align: right;
@@ -375,7 +381,6 @@ footer .team {
 
 @media (max-width: 1020px){
   footer .team {
-    padding: 10px 0 25px;
     text-align: center;
   }
 }
@@ -385,36 +390,21 @@ footer a, footer a:link, footer a:visited {
 }
 
 footer ul.links {
-  padding: 25px 0;
-  margin: 0;
+  margin-left: 0px;
 }
+
 footer ul.links li {
-  list-style: none;
-  padding: 0;
   font-size: 16px;
+  margin-bottom: 5px;
 }
+
 footer ul.links li a, footer ul.links li a:visited {
-  display: block;
-  padding: 4px 0 4px 32px;
-  background: transparent no-repeat left 3px;
   color: #fff;
   text-decoration: none;
 }
+
 footer ul.links li a:hover {
   text-decoration: underline;
-}
-
-footer ul.links li a.twitter {
-  background-image: url('/images/links-twitter.png');
-}
-footer ul.links li a.facebook {
-  background-image: url('/images/links-facebook.png');
-}
-footer ul.links li a.github {
-  background-image: url('/images/links-github.png');
-}
-footer ul.links li a.google {
-  background-image: url('/images/links-google.png');
 }
 
 @media (max-width: 1020px){
@@ -425,10 +415,10 @@ footer ul.links li a.google {
   }
   footer ul.links li {
     display: inline-block;
-    padding: 0px 8px;
+    padding: 0px 10px;
   }
   footer ul.links li a {
     display: inline-block;
-    padding-left: 28px;
+    padding-left: 0px;
   }
 }
