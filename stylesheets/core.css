@@ -17,6 +17,12 @@ body {
   margin: 0 auto;
 }
 
+.note {
+  font-size: 0.8em;
+  color: gray;
+  margin-top: -10px;
+}
+
 @media (max-width: 1020px){
   .wrap, .inner {
     width: 100%;
