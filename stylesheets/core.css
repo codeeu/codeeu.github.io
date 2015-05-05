@@ -176,11 +176,11 @@ header h2 a:hover, header h2 a:active {
 /* Intro */
 
 #intro {
-  height: 520px;
+  height: 600px;
   padding: 0;
   background: #4489ca;
   color: #fff;
-  font-size: 28px;
+  font-size: 27px;
   line-height: 49px;
   font-weight: 400;
   margin-bottom: 15px;
