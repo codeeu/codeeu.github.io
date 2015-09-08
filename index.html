@@ -1,47 +1,542 @@
 ---
-layout: home
+layout: default
 title: Europe Code Week
 ---
+		<section id="slider" class="slider-parallax full-screen force-full-screen with-header swiper_wrapper page-section clearfix">
 
-<section id="why" class="wrap">
-  <h1>Why learn to code?</h1>
+			<div class="swiper-container swiper-parent">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide dark" style="background-image: url('img/portada.jpg');">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+                                <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter bottommargin" style="max-width:700px;"></div>
 
-  <p>Today we live in a world that has been affected by rapid advances in technology.  The way we work, communicate, shop and think has changed dramatically. In order to cope with these rapid changes and to make sense of the world around us, we need to not only develop our understanding of how technology works, but also develop skills and capabilities, that will help us to adapt to living in this new era.</p>
+                                <script>
+                                    jQuery(document).ready( function($){
+                                        var newDate = new Date(2015, 10, 10);
+                                        $('#countdown-ex1').countdown({until: newDate});
+                                    });
+                                </script>
+                                
+								<h2 data-caption-animate="fadeInUp">CODEWEEK.EU</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200">10th &mdash; 18th October 2015 <a href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a></p>
+                                
+							</div>
+						</div>
+					</div>
+        <!--
+					<div class="swiper-slide dark">
+						<div class="container clearfix">
+							<div class="slider-caption slider-caption-center">
+								<h2 data-caption-animate="fadeInUp">Beautifully Flexible</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200">Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Powerful Layout with Responsive functionality that can be adapted to any screen size.</p>
+							</div>
+						</div>
+						<div class="video-wrap">
+							<video poster="img/videos/explore-poster.jpg" preload="auto" loop autoplay muted>
+								<source src='img/videos/explore.mp4' type='video/mp4' />
+								<source src='img/videos/explore.webm' type='video/webm' />
+							</video>
+							<div class="video-overlay" style="background-color: rgba(0,0,0,0.55);"></div>
+						</div>
+					</div>
+					<div class="swiper-slide" style="background-image: url('img/slider/swiper/3.jpg'); background-position: center top;">
+						<div class="container clearfix">
+							<div class="slider-caption">
+								<h2 data-caption-animate="fadeInUp">Great Performance</h2>
+								<p data-caption-animate="fadeInUp" data-caption-delay="200">You'll be surprised to see the Final Results of your Creation &amp; would crave for more.</p>
+							</div>
+						</div>
+					</div>
+        -->
+				</div>
+        <!--
+				<div id="slider-arrow-left"><i class="icon-angle-left"></i></div>
+				<div id="slider-arrow-right"><i class="icon-angle-right"></i></div>
+				<div id="slide-number"><div id="slide-number-current"></div><span>/</span><div id="slide-number-total"></div>
+                </div>
+        -->  
+				<a href="#" data-scrollto="#section-codeweek" class="one-page-arrow dark">
+					<i class="icon-angle-down infinite animated fadeInDown"></i>
+				</a>
+                
+			</div>
 
-  <p>Learning to code helps us to make sense of how things work, explore ideas and make things, for both work and play. What’s more it helps us to unleash our creativity and work collaboratively with wonderful people both near us and all over the world.</p>
-</section>
+			<script>
+				jQuery(document).ready(function($){
+					var swiperSlider = new Swiper('.swiper-parent',{
+						paginationClickable: false,
+						slidesPerView: 1,
+						grabCursor: true,
+						onSwiperCreated: function(swiper){
+							$('[data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var toAnimateDelay = $(this).attr('data-caption-delay');
+								var toAnimateDelayTime = 0;
+								if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 750; } else { toAnimateDelayTime = 750; }
+								if( !$toAnimateElement.hasClass('animated') ) {
+									$toAnimateElement.addClass('not-animated');
+									var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+									setTimeout(function() {
+										$toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+									}, toAnimateDelayTime);
+								}
+							});
+						},
+						onSlideChangeStart: function(swiper){
+							$('#slide-number-current').html(swiper.activeIndex + 1);
+							$('[data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+								$toAnimateElement.removeClass('animated').removeClass(elementAnimation).addClass('not-animated');
+							});
+						},
+						onSlideChangeEnd: function(swiper){
+							$('#slider .swiper-slide').each(function(){
+								if($(this).find('video').length > 0) { $(this).find('video').get(0).pause(); }
+							});
+							$('#slider .swiper-slide:not(".swiper-slide-active")').each(function(){
+								if($(this).find('video').length > 0) {
+									if($(this).find('video').get(0).currentTime != 0 ) $(this).find('video').get(0).currentTime = 0;
+								}
+							});
+							if( $('#slider .swiper-slide.swiper-slide-active').find('video').length > 0 ) { $('#slider .swiper-slide.swiper-slide-active').find('video').get(0).play(); }
 
-<section id="get-involved" class="wrap">
-  <h1>Get involved</h1>
+							$('#slider .swiper-slide.swiper-slide-active [data-caption-animate]').each(function(){
+								var $toAnimateElement = $(this);
+								var toAnimateDelay = $(this).attr('data-caption-delay');
+								var toAnimateDelayTime = 0;
+								if( toAnimateDelay ) { toAnimateDelayTime = Number( toAnimateDelay ) + 300; } else { toAnimateDelayTime = 300; }
+								if( !$toAnimateElement.hasClass('animated') ) {
+									$toAnimateElement.addClass('not-animated');
+									var elementAnimation = $toAnimateElement.attr('data-caption-animate');
+									setTimeout(function() {
+										$toAnimateElement.removeClass('not-animated').addClass( elementAnimation + ' animated');
+									}, toAnimateDelayTime);
+								}
+							});
+						}
+					});
 
-  <p>We invite you to either <a href="http://events.codeweek.eu/">organize an event</a> during the EU Code week or join an event that has been organized by other people. To add your event to our Coding Map of Europe please <a href="http://events.codeweek.eu/">visit our events page</a>. You can use our <a href="http://events.codeweek.eu/guide/">#codeEU Toolkit for organizers</a> and a <a href="/resources/">list of resources</a> to help you get started.</p>
+					$('#slider-arrow-left').on('click', function(e){
+						e.preventDefault();
+						swiperSlider.swipePrev();
+					});
 
-  <p>If you need help or have a question you can get in touch with <a href="http://events.codeweek.eu/ambassadors/">EU Code Week Ambassadors</a> in your country.</p>
-</section>
+					$('#slider-arrow-right').on('click', function(e){
+						e.preventDefault();
+						swiperSlider.swipeNext();
+					});
 
-<section id="spread-the-word" class="wrap">
-  <h1>Spread the word</h1>
+					$('#slide-number-current').html(swiperSlider.activeIndex + 1);
+					$('#slide-number-total').html(swiperSlider.slides.length);
+				});
+			</script>
 
-  <p>We regularly share stories, news and events related to coding activities on <a href="http://blog.codeweek.eu/">our blog</a>, so if you would like to showcase your event or activity please just send the content to us. You can also get involved in Code Week discussions on Twitter - there's regular updates at <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> and under the hashtag <a href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p>
+		</section>
+		<!-- Page Sub Menu
+		============================================= -->
+		<div id="page-menu">
 
-  <p>Please subscribe to our (newsletter) email updates, where we're sending out occasional Code Week news.</p>
+			<div id="page-menu-wrap">
 
-  <!-- Begin MailChimp Signup Form -->
-  <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-  <div id="mc_embed_signup">
-  <form action="http://github.us7.list-manage.com/subscribe/post?u=664b714a19a3f9b118f6b1503&amp;id=cb7307ae66" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="form-inline validate" role="form" target="_blank" novalidate>
-    <div class="form-group">
-      <label class="sr-only"for="exampleInputEmail2">Please enter your email</label>
-      <input type="email" value="" name="EMAIL" class="form-control input-lg" size="40" id="mce-EMAIL" placeholder="Please enter your email, we don't spam" required>
-    </div>
-    <input type="submit" value="Join the #codeEU newsletter" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary btn-lg">
-  </form>
-  </div>
-  <!--End mc_embed_signup-->
-</section>
+				<div class="container clearfix">
 
-<section id="spread-the-word" class="wrap">
-  <h1>Sponsorship opportunities</h1>
+					<div class="menu-title">CodeWeek <span>EU</span></div>
 
-  <p>EU Code Week is dedicated to raising awareness of how coding can help people to develop both technical and transferable skills for life. Our website and social network sites reach millions of people around the world who are interested in getting involved in coding activities. The group is run by volunteers and also all of the events listed are organized by more wonderful volunteers. If you would like to be part of our community and sponsor our activities, <a href="mailto:europecodes@gmail.com">please contact us</a>.</p>
-</section>
+					<nav class="one-page-menu">
+						<ul>
+							<li><a href="#" data-href="#header"><div>Home</div></a></li>
+							<li><a href="#" data-href="#section-codeweek"><div>CodeWeek</div></a></li>
+							<li><a href="#" data-href="#section-why"><div>Why?</div></a></li>
+                            <li><a href="#" data-href="#section-join"><div>Get involved</div></a></li>
+                            <li><a href="#" data-href="#section-partners"><div>Partners</div></a></li>
+                            <li><a href="#" data-href="#section-newsletter"><div>Newsletter</div></a></li>
+							<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+						</ul>
+					</nav>
+
+					<div id="page-submenu-trigger"><i class="icon-reorder"></i></div>
+
+				</div>
+
+			</div>
+
+		</div><!-- #page-menu end -->
+<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap">
+
+				<section id="section-codeweek" class="page-section">
+
+                    <div class="container clearfix">
+
+                        <div class="heading-block bottommargin-lg center">
+                            <h2>CodeWeek</h2>
+                            <span>Europe Code Week 2015 returns with many more exciting events and activities. Join us and spread the word amongst your community!</span>
+                        </div>
+
+                        <div class="col_one_third">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <h4>¿<span>When</span> is it?</h4>
+                            </div>
+
+                            <p><strong>10th - 18th October 2015</strong>.</p>
+
+                        </div>
+
+                        <div class="col_one_third">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <h4>¿<span>What</span> is CodeWeek?</h4>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+
+                        </div>
+
+                        <div class="col_one_third col_last">
+
+                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
+                                <h4>¿<span>Who</span> can participate?</h4>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+
+                        </div>
+
+                        <div class="clear"></div>
+                    <div class="heading-block bottommargin-lg center">
+                            <h2>In the last edition</h2>
+                            <span>Europe Code Week 2014</span>
+                        </div>
+				    
+					<div class="container clearfix">
+                        
+ 
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-line-flag"></i>
+								<div class="counter counter-lined"><span data-from="1" data-to="37" data-refresh-interval="5" data-speed="2000"></span></div>
+								<h5>Countries</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="200">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-location"></i>
+								<div class="counter counter-lined"><span data-from="30" data-to="89" data-refresh-interval="10" data-speed="2500"></span></div>
+								<h5>Ambassadors</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center" data-animate="bounceIn" data-delay="400">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-calendar2"></i>
+								<div class="counter counter-lined"><span data-from="1500" data-to="4000" data-refresh-interval="100" data-speed="3500"></span></div>
+								<h5>Events</h5>
+							</div>
+
+							<div class="col_one_fourth nobottommargin center col_last" data-animate="bounceIn" data-delay="600">
+								<i class="i-plain i-xlarge divcenter nobottommargin icon-group"></i>
+								<div class="counter counter-lined"><span data-from="100000" data-to="150000" data-refresh-interval="100" data-speed="2700"></span>+</div>
+								<h5>People</h5>
+							</div>
+
+	
+                        
+
+					</div>
+
+				</div>
+
+				</section>
+                
+				<section id="section-why" class="page-section topmargin">
+
+                    <div class="container clearfix">
+                        <div class="heading-block center">
+                            <h2>Why learn to code?</h2>
+							<span></span>
+                        </div>
+                        
+
+					<div class="col_three_fifth  bottommargin">
+						<img data-animate="fadeInLeftBig" src="img/scratchDay15.jpg" alt="Programamos">
+					</div>
+
+					<div class="col_two_fifth bottommargin-lg col_last">
+
+						<p style="font-size: 1.2em;">Today we live in a world that has been affected by rapid advances in technology. The way we work, communicate, shop and think has changed dramatically. In order to cope with these rapid changes and to make sense of the world around us, we need to not only develop our understanding of how technology works, but also develop skills and capabilities, that will help us to adapt to living in this new era.</p>
+                        <p style="font-size: 1.2em;">Learning to code helps us to make sense of how things work, explore ideas and make things, for both work and play. What’s more it helps us to unleash our creativity and work collaboratively with wonderful people both near us and all over the world.</p>
+
+
+					</div>
+
+				</div>                    
+
+				</section>
+      
+				<section id="section-join" class="page-section section">
+
+                    
+                    <div class="heading-block center">
+                            <h2>Get involved!</h2>
+							<span></span>
+                    </div>
+
+					<div class="container clearfix">
+                        
+                        <div id="side-navigation">
+                         <div class="col_one_third nobottommargin">
+
+                            <ul class="sidenav">
+                                <li class="ui-tabs-active"><a href="#snav-content1">Kids, young and adults<i class="icon-chevron-right"></i></a></li>
+                                <li><a href="#snav-content2">Programmers<i class="icon-chevron-right"></i></a></li>
+                                <li><a href="#snav-content3">Teachers<i class="icon-chevron-right"></i></a></li>
+                                <li><a href="#snav-content4">Family<i class="icon-chevron-right"></i></a></li>
+                                <li><a href="#snav-content5">Businesses and organizations<i class="icon-chevron-right"></i></a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="col_two_third col_last nobottommargin">
+
+                            <div id="snav-content1">
+                                <div class="heading-block">
+                                    <h3>Kids, young and adults</h3>
+                                    <span></span>
+                                </div>
+                                
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+                            </div>
+
+                            <div id="snav-content2">
+                                <div class="heading-block">
+                                    <h3>Programmers</h3>
+                                    <span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>       
+                            </div>
+
+                            <div id="snav-content3">
+                                <div class="heading-block">
+                                    <h3>Teachers</h3>
+                                    <span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+                            </div>
+
+                            <div id="snav-content4">
+                                <div class="heading-block">
+                                    <h3>Family</h3>
+                                    <span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+
+                            </div>
+                            <div id="snav-content5">
+                                <div class="heading-block">
+                                    <h3>Businesses and organizations</h3>
+                                    <span></span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? Quam rerum possimus maxime veniam aut ratione eveniet aliquid cumque aspernatur ipsum libero quaerat, nam. Ad, sunt, error!</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <script>
+                      $(function() {
+                        $( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+                      });
+                    </script>
+                    </div>
+                    
+                    <div class="center"> <a href="http://events.codeweek.eu" class="button button-border button-rounded button-large noleftmargin topmargin-sm">Get involved!</a></div>
+
+				</section>
+          
+                <section id="section-partners" class="page-section topmargin-lg">
+                    
+                    <div class="container clearfix">
+
+                        <div class="heading-block bottommargin-lg center">
+                            <h2>Partners</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellendus adipisci laborum placeat delectus labore cupiditate deserunt minus numquam consequatur esse, hic at earum illo animi eaque et, dolorem quo qui eos? <a href="#" data-scrollto="#section-contact">Get in touch with us.</a></p>
+                        </div>
+
+                        <div class="">
+                            
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <ul class="clients-grid grid-6 nobottommargin clearfix">
+                            <li><a href="http://programamos.es"><img src="img/partners/colabora_programamos.png" alt="Programamos"></a></li>
+                            <li><a href="http://drscratch.programamos.es"><img src="img/partners/colabora_drscratch.png" alt="Dr.Scratch"></a></li>
+                            <li><a href="http://www.urjc.es/"><img src="img/partners/colabora_urjc.png" alt="URJC"></a></li>
+                            <li><a href="https://twitter.com/h4ckademy?p=i"><img src="img/partners/colabora_h4ckademy.png" alt="H4ckademy"></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li> 
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                            <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                                                        <li><a href="#" data-scrollto="#section-contact"><img src="img/partners/colabora_suma.png" alt=""></a></li>
+                        </ul>
+
+                    </div>
+                </section>
+                
+                
+                    
+                <section id="section-newsletter" class="page-section topmargin-lg">
+                    
+                <div class="container clearfix">
+                        <div class="heading-block center">
+							<h3>Subscribe to Our <span>Newsletter</span></h3>
+                            <span>to get important news</span>
+						</div>
+                  
+    
+                        <p style="font-size:1.3em; text-align: center;">We regularly share stories, news and events related to coding activities on <a href="http://blog.codeweek.eu/">our blog</a>, so if you would like to showcase your event or activity please just send the content to us. You can also get involved in Code Week discussions on Twitter - there's regular updates at <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> and under the hashtag <a href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p>
+
+  <p style="font-size:1.3em; text-align: center;">Please subscribe to our (newsletter) email updates, where we're sending out occasional Code Week news.</p>
+                    
+                   
+						<div id="widget-subscribe-form2-result" data-notify-type="success" data-notify-msg=""></div>
+						<form id="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
+							<div class="input-group input-group-lg divcenter" style="max-width:600px;">
+								<span class="input-group-addon"><i class="icon-email2"></i></span>
+								<input type="email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Please enter your mail, we don´t spam">
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="submit">Suscribir</button>
+								</span>
+							</div>
+						</form>
+
+						<script>
+							jQuery("#widget-subscribe-form2").validate({
+								submitHandler: function(form) {
+									jQuery(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
+									jQuery(form).ajaxSubmit({
+										target: '#widget-subscribe-form2-result',
+										success: function() {
+											jQuery(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
+											jQuery('#widget-subscribe-form2').find('.form-control').val('');
+											jQuery('#widget-subscribe-form2-result').attr('data-notify-msg', jQuery('#widget-subscribe-form2-result').html()).html('');
+											SEMICOLON.widget.notifications(jQuery('#widget-subscribe-form2-result'));
+										}
+									});
+								}
+							});
+						</script>
+                        
+                </div>
+                
+                
+
+                </section>
+
+				<section id="section-contact" class="page-section section">
+                    
+					<div class="heading-block title-center">
+						<h2>Get in Touch with us</h2>
+						<span>Still have Questions? Contact Us using the Form below.</span>
+					</div>
+
+					<div class="container clearfix">
+                        
+
+
+						<!-- Contact Form
+						============================================= -->
+
+
+							<div class="fancy-title title-dotted-border">
+								<h3>Send us an Email</h3>
+							</div>
+
+							<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
+
+							<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
+
+							<div class="form-process"></div>
+
+							<div class="col_one_third">
+								<label for="template-contactform-name">Name <small>*</small></label>
+								<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+							</div>
+
+							<div class="col_one_third">
+								<label for="template-contactform-email">Email <small>*</small></label>
+								<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+							</div>
+
+							<div class="col_one_third col_last">
+								<label for="template-contactform-phone">Phone</label>
+								<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+							</div>
+
+							<div class="clear"></div>
+
+							<div class="col_two_third">
+								<label for="template-contactform-subject">Subject <small>*</small></label>
+								<input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control" />
+							</div>
+
+
+
+							<div class="clear"></div>
+
+							<div class="col_full">
+								<label for="template-contactform-message">Message <small>*</small></label>
+								<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+							</div>
+
+							<div class="col_full hidden">
+								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+							</div>
+
+							<div class="col_full">
+								<button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+							</div>
+
+						</form>
+
+						<script type="text/javascript">
+
+							$("#template-contactform").validate({
+								submitHandler: function(form) {
+									$('.form-process').fadeIn();
+									$(form).ajaxSubmit({
+										target: '#contact-form-result',
+										success: function() {
+											$('.form-process').fadeOut();
+											$('#template-contactform').find('.sm-form-control').val('');
+											$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
+											SEMICOLON.widget.notifications($('#contact-form-result'));
+										}
+									});
+								}
+							});
+
+						</script>
+
+						</div><!-- Contact Form End -->
+                      
+                
+				</section>
+                
+
+                <a href="http://events.codeweek.eu" class="button button-blue button-full center tright footer-stick">
+                        <div class="container clearfix">
+                            Bring your ideas to life with <strong>#coding</strong> <i class="icon-caret-right" style="top:4px;"></i>
+                        </div>
+                </a>
+			</div>
+
+		</section><!-- #content end -->

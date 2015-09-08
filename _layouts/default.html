@@ -1,57 +1,168 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 <head>
 
-  <style type="text/css">
-  @import url('/stylesheets/core.css');
-  </style>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    
+
+	<link rel="stylesheet" href="/stylesheets/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/style.css" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/dark.css" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/font-icons.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="/stylesheets/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/stylesheets/magnific-popup.css" type="text/css" />
+-->
+
+	<link rel="stylesheet" href="/stylesheets/responsive.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!--[if lt IE 9]>
+		<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+    <!-- Here goes your colors.css
+	============================================= -->
+	<link rel="stylesheet" href="/stylesheets/colors.css" type="text/css" />
+
+    
+	<!-- External JavaScripts
+	============================================= -->
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	<script type="text/javascript" src="/js/plugins.js"></script>
+
+	<!-- Document Title
+	============================================= -->
   <meta name="description" content="October 10 - 18, 2015: a week to celebrate coding in Europe, encouraging citizens to learn more about technology, and connecting communities and organizations who can help you learn coding." />
   <meta property="og:image" content="/img/codeweekEU-logo-600.png" />
   <title>Europe Code Week 2015 - {{ page.title }}</title>
-
+    
 </head>
 
-<body>
+
+<body class="stretched no-transition">
+    <!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+        
+        <!-- Header
+		============================================= -->
+		<header id="header" class="page-section full-header">
+
+			<div id="header-wrap">
+
+				<div class="container clearfix">
+
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="http://codeweek.eu" class="standard-logo" data-dark-logo="/img/codeweekeu.png"><img src="/img/codeweekeu.png" alt="CodeWeekES"></a>
+						<a href="http://codeweek.eu" class="retina-logo" data-dark-logo="/img/codeweekeu.png"><img src="/img/codeweekeu.png" alt="CodeWeekES"></a>
+					</div><!-- #logo end -->
+    {% include nav.ext %}
+
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
 
   {{ content }}
+    
+    
 
-  <footer>
-    <div class="inner row">
-      <ul class="links fa-ul col-md-4">
-        <li>
-          <span class="fa-stack fa-sm">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-          <a href="https://twitter.com/codeweekeu" title="@CodeWeekEU on Twitter" class="twitter">CodeWeekEU</a></li>
-        <li>
-          <span class="fa-stack fa-sm">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-          <a href="https://www.facebook.com/codeEU" title="Europe Code Week on Facebook" class="facebook">codeEU</a></li>
-        <li>
-          <span class="fa-stack fa-sm">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
-          </span>
-          <a href="https://plus.google.com/+CodeweekEu/" title="Europe Code Week on Google+" class="google">CodeWeekEU</a></li>
-        <li>
-          <span class="fa-stack fa-sm">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-          <a href="https://github.com/codeeu" title="CodeEU on GitHub" class="github">codeeu</a></li>
-      </ul>
-      <div class="team col-md-8">
-        A project by the <a href="http://ec.europa.eu/digital-agenda/en/young-advisors">Young Advisors Group</a> at the <a href="http://ec.europa.eu/index_en.htm">European Commission</a><br>
-        Help us with this website on <a href="https://github.com/codeeu/codeeu.github.io">GitHub</a>
-      </div>
-    </div>
-  </footer>
+
+        
+                <!-- Footer
+        ============================================= -->
+        <footer id="footer" class="dark">
+
+            <!-- Copyrights
+            ============================================= -->
+            <div id="copyrights">
+
+                <div class="container clearfix">
+
+                    <div class="col_half">
+                        <img src="/img/codeweekeu.png" alt="" class="footer-logo" style="width: 250px">
+                        A project by the <a href="http://ec.europa.eu/digital-agenda/en/young-advisors">Young Advisors Group</a> at the <a href="http://ec.europa.eu/index_en.htm">European Commission</a>
+                        
+                    </div>
+
+                    <div class="col_half col_last tright">
+                        <div class="copyrights-menu copyright-links fright clearfix">
+                            <a href="http://codeweek.eu">Home</a>/<a href="http://events.codeweek.eu/">Events</a>/<a href="http://events.codeweek.eu/ambassadors">Ambassadors</a>/<a href="/resources/">Resources</a>/<a href="/about/">About</a>/<a href="http://blog.codeweek.eu/">News</a>
+                        </div>
+                        <div class="fright clearfix">
+                            <a href="https://www.facebook.com/codeEU" class="social-icon si-small si-borderless nobottommargin si-facebook">
+                                <i class="icon-facebook"></i>
+                                <i class="icon-facebook"></i>
+                            </a>
+
+                            <a href="https://twitter.com/codeweekEU" class="social-icon si-small si-borderless nobottommargin si-twitter">
+                                <i class="icon-twitter"></i>
+                                <i class="icon-twitter"></i>
+                            </a>
+
+                            <a href="https://plus.google.com/+CodeweekEu/" class="social-icon si-small si-borderless nobottommargin si-gplus">
+                                <i class="icon-gplus"></i>
+                                <i class="icon-gplus"></i>
+                            </a>
+
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-vimeo">
+                                <i class="icon-vimeo"></i>
+                                <i class="icon-vimeo"></i>
+                            </a>
+
+                            <a href="https://github.com/codeeu/codeeu.github.io" class="social-icon si-small si-borderless nobottommargin si-github">
+                                <i class="icon-github"></i>
+                                <i class="icon-github"></i>
+                            </a>
+
+
+                            <a href="#" class="social-icon si-small si-borderless nobottommargin si-linkedin">
+                                <i class="icon-linkedin"></i>
+                                <i class="icon-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div><!-- #copyrights end -->
+
+        </footer><!-- #footer end -->
+        
+        
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script type="text/javascript" src="/js/functions.js"></script>
+    
+ 	<!-- Google Analytics
+	============================================= -->   
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64467343-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <!-- Fin Google Analytics -->
 
 </body>
 </html>

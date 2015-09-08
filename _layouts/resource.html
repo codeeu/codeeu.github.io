@@ -1,8 +1,29 @@
 ---
-layout: header
+layout: default
 ---
 
-<section class="content country wrap">
-  <h1>Coding resources from {{ page.title }}</h1>
-  {{ content }}
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
+			<div class="container clearfix">
+				<h1>Coding resources from {{ page.title }}</h1>
+				<span>CodeWeekEU2015</span>
+				<ol class="breadcrumb">
+					<li><a href="http://codeeu.programamos.es">Home</a></li>
+                    <li><a href="http://codeeu.programamos.es/resources">Resources</a></li>
+					<li class="active">Coding resources from {{ page.title }}</li>
+				</ol>
+			</div>
+
+		</section><!-- #page-title end -->
+<!-- Content
+		============================================= -->
+<section id="content">
+
+			<div class="content-wrap">
+                <div class="container clearfix">
+                    {{ content }}
+                </div>
+            </div>
 </section>

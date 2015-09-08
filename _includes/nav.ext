@@ -1,10 +1,25 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
-<nav>
+<!-- Primary Navigation
+============================================= -->
+<nav id="primary-menu">
+
   <ul>
   	<li><a href="http://events.codeweek.eu/">Events</a></li>
-    <li><a {% if location == 'resources' %}class="active" {% endif %}href="/resources/">Resources</a></li>
-    <li><a {% if location == 'code' %}class="active" {% endif %}href="/code/">Why coding?</a></li>
-    <li><a {% if location == 'about' %}class="active" {% endif %}href="/about/">About</a></li>
+    <li {% if location == 'ambassadors' %}class="current" {% endif %}><a href="http://events.codeweek.eu/ambassadors">Ambassadors</a></li>
+    <li {% if location == 'resources' %}class="current" {% endif %}><a href="/resources/">Resources</a></li>
+   <!-- <li {% if location == 'code' %}class="current" {% endif %}><a href="/code/">Why coding?</a></li> -->
+    <li {% if location == 'about' %}class="current" {% endif %}><a href="/about/">About</a></li>
     <li><a href="http://blog.codeweek.eu/">News</a></li>
   </ul>
-</nav>
+  
+  
+	<!-- Top Search
+	============================================= -->
+	<div id="top-search">
+		<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+		<form action="/search.html" method="get">
+				<input type="text" name="q" class="form-control" value="" placeholder="Type & hit Enter...">
+		</form>
+	</div><!-- #top-search end -->
+
+</nav><!-- #primary-menu end -->
