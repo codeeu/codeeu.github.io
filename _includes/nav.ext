@@ -4,6 +4,7 @@
 	<!-- Primary Navigation -->
 	<!-- ============================================= -->
 	<ul>
+		<li><a href="http://codeweek.eu/">Home</a></li>
 		<li><a href="http://events.codeweek.eu/">Events</a></li>
 		<li {% if location == 'ambassadors' %}class="current" {% endif %}><a href="http://events.codeweek.eu/ambassadors">Ambassadors</a></li>
 		<li {% if location == 'resources' %}class="current" {% endif %}><a href="/resources/">Resources</a></li>
