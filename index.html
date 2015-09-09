@@ -328,49 +328,6 @@ title: Europe Code Week
 			</div>
 		</section>
 
-		<section id="section-newsletter" class="page-section topmargin-lg">
-			<div class="container clearfix">
-
-				<div class="heading-block center">
-					<h3>Subscribe to Our <span>Newsletter</span></h3>
-					<span>to get important news</span>
-				</div>
-
-				<p style="font-size:1.3em; text-align: center;">We regularly share stories, news and events related to coding activities on <a href="http://blog.codeweek.eu/">our blog</a>, so if you would like to showcase your event or activity please just send the content to us. You can also get involved in Code Week discussions on Twitter - there's regular updates at <a href="https://twitter.com/CodeWeekEU">@CodeWeekEU</a> and under the hashtag <a href="https://twitter.com/search?q=%23codeEU&amp;f=realtime">#codeEU</a>.</p>
-
-				<p style="font-size:1.3em; text-align: center;">Please subscribe to our (newsletter) email updates, where we're sending out occasional Code Week news.</p>
-
-				<div id="widget-subscribe-form2-result" data-notify-type="success" data-notify-msg=""></div>
-				<form id="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
-					<div class="input-group input-group-lg divcenter" style="max-width:600px;">
-						<span class="input-group-addon"><i class="icon-email2"></i></span>
-						<input type="email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Please enter your mail, we don´t spam">
-						<span class="input-group-btn">
-							<button class="btn btn-default" type="submit">Suscribir</button>
-						</span>
-					</div>
-				</form>
-
-				<script>
-					jQuery("#widget-subscribe-form2").validate({
-						submitHandler: function(form) {
-							jQuery(form).find('.input-group-addon').find('.icon-email2').removeClass('icon-email2').addClass('icon-line-loader icon-spin');
-							jQuery(form).ajaxSubmit({
-								target: '#widget-subscribe-form2-result',
-								success: function() {
-									jQuery(form).find('.input-group-addon').find('.icon-line-loader').removeClass('icon-line-loader icon-spin').addClass('icon-email2');
-									jQuery('#widget-subscribe-form2').find('.form-control').val('');
-									jQuery('#widget-subscribe-form2-result').attr('data-notify-msg', jQuery('#widget-subscribe-form2-result').html()).html('');
-									SEMICOLON.widget.notifications(jQuery('#widget-subscribe-form2-result'));
-								}
-							});
-						}
-					});
-				</script>
-
-			</div>
-		</section>
-
 		<section id="section-contact" class="page-section section">
 
 			<div class="heading-block title-center">
