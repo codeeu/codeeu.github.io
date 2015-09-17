@@ -1,0 +1,15 @@
+body {
+	font-size: 18px;
+}
+
+ul, ol {
+	padding-left: 1.6em;
+}
+
+.fancy-title h1, .fancy-title h2, .fancy-title h3, .fancy-title h4, .fancy-title h5, .fancy-title h6 {
+    background-color: #f9f9f9;
+}
+
+.feature-box.fbox-center p {
+    font-size: 16px;
+}

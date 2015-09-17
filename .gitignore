@@ -1,2 +1,9 @@
 _site
 .DS_Store
+stylesheets/dark.css
+stylesheets/responsive.css
+stylesheets/colors.css
+stylesheets/style.css
+js/functions.js
+js/plugins.js
+
