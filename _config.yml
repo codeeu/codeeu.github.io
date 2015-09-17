@@ -1,6 +1,6 @@
 name: Europe Code Week
 markdown: redcarpet
-pygments: true
+highlighter: pygments
 
 contact:
     email: europecodes@gmail.com
