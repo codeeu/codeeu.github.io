@@ -1,11 +1,22 @@
 # Europe Code Week website
 
-The website was created with [jekyll](http://jekyllrb.com/). To contribute, Fork the repository on GitHub by clicking the "Fork" button.
+The website was created with [jekyll](http://jekyllrb.com/). It's a Ruby gem
+(library). To contribute:
 
-Once you have a copy of the repository under your account, clone it to your computer, then install jekyll (see website for help).
+1. Make sure you have Ruby and [Bundler](http://bundler.io/) installed.
+2. Fork the repository on GitHub by clicking the "Fork" button.
+3. Clone the repository to your computer.
+4. In the repository folder on your machine, run `bundle install` to have the
+   project's dependencies installed.
 
-To run jekyll and generate new pages, use
+After that, you can run the following command to preview locally the changes
+you make on the website:
 
-	jekyll serve
+	jekyll serve --watch
 
-Test the changes locally, then push to your GitHub repo and send a Pull Request for review.
+Then open http://localhost:4000/ and you should be able to see the site.
+
+Test your changes locally, then push to your GitHub repo and send a Pull
+Request for review.
+
+Thank you for contributing.
