@@ -14,7 +14,8 @@ you make on the website:
 
 	jekyll serve --watch
 
-Then open http://localhost:4000/ and you should be able to see the site.
+Then open [localhost:4000](http://localhost:4000/) and you should be able to 
+see the site.
 
 Test your changes locally, then push to your GitHub repo and send a Pull
 Request for review.
