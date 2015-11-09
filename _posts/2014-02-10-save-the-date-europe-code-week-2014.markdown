@@ -22,7 +22,7 @@ That's why we want to inspire European citizens of all ages to start learning th
 - **Are you a business, struggling to find technical talent?** Host a beginner coding workshop, organize a fun coding challenge for students or offer sponsorship for coding events!
 - **Did you participate in last year's Code Week?** Tell us about your event, what were the lessons learned, so they can be used to inspire others!
 
-We also need your help with spreading the word about Europe Code Week. Share the news with your friends and followers on [Twitter](https://twitter.com/CodeWeekEU), [Facebook](https://www.facebook.com/codeEU) and elsewhere under the hashtag [#codeEU](https://twitter.com/search?q=%23codeEU&f=realtime). Send us an email at <a href="mailto:{{ site.contact.email }}">europecodes@gmail.com</a> if you've got a story to share, questions about organizing an event or if you want to help out.
+We also need your help with spreading the word about Europe Code Week. Share the news with your friends and followers on [Twitter](https://twitter.com/CodeWeekEU), [Facebook](https://www.facebook.com/codeEU) and elsewhere under the hashtag [#codeEU](https://twitter.com/search?q=%23codeEU&f=realtime). Send us an email at <a href="mailto:{{ site.contact.email }}">info@codeweek.eu</a> if you've got a story to share, questions about organizing an event or if you want to help out.
 
 ## About Europe Code Week
 
