@@ -1,6 +1,6 @@
 name: Europe Code Week
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 
 contact:
     email: info@codeweek.eu
