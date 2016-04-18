@@ -1,5 +1,5 @@
 name: Europe Code Week
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
 
 contact:
