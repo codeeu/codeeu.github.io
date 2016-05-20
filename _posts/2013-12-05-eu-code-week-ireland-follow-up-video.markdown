@@ -3,6 +3,9 @@ layout: post
 title:  "EU Code Week Ireland follow up video"
 date:   2013-12-05 20:52:13
 categories: news
+tags: [Coding, Codeweek]
+img: 
+video: "https://player.vimeo.com/video/81054753"
 ---
 
 Ireland was undoubtedly the hero of the first ever Europe Code Week! To learn more about what was going on last week all over the country, take a look at the great follow up [video](https://vimeo.com/81054753) created by the [Galway Education Centre](http://www.galwayec.ie), featuring Irish #codeEU ambassador [Julie Cullen](https://twitter.com/cullej29).

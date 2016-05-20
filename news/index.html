@@ -5,16 +5,72 @@ title: News
 
 <div class="alert alert-danger">Note: This is an <strong>archive</strong> of news from the first Code Week. Visit our <a href="http://blog.codeweek.eu/">new blog</a> for the latest updates.</div>
 
-{% for post in site.posts limit:5 %}
-	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-	<span>Published on {{ post.date | date_to_string }}</span>
-	<p>{{ post.content }}</p>
-	<hr class="blog-divider"/>
-{% endfor %}
+<!-- Post Content
 
-<p>Older news:</p>
-<ul>
-{% for post in site.posts offset:5 %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+
+						<!-- Posts
+						============================================= -->
+						<div id="posts" class="small-thumbs">
+                            
+                            
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+                            
+                            <div class="entry clearfix">
+                                {% if post.img | is not null %}
+								<div class="entry-image">
+									<img class="image_fade" src="{{ post.img }}" alt="Standard Post with Image">
+								</div>
+                                {% else %}
+                                    {% if post.video | is not null %}
+                                <div class="entry-image">
+									<iframe src="{{ post.video }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+								</div>
+                                    {% endif %}
+                                {% endif %}
+								<div class="entry-c">
+									<div class="entry-title">
+										<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+									</div>
+									<ul class="entry-meta clearfix">
+										<li><i class="icon-calendar3"></i> {{ post.date | date_to_string }}</li>
+										<li><a href="#"><i class="icon-user"></i> CodeWeek</a></li>
+										<li><i class="icon-folder-open"></i> News</li>
+									
+									</ul>
+									<div class="entry-content">
+										{{ post.excerpt }}
+										<a href="{{ post.url }}"class="more-link">Read More</a>
+									</div>
+								</div>
+  
+							</div>
+                            
+                            
+                            
 {% endfor %}
-</ul>
+</div>
+<div class="clearfix">
+<!-- Pagination links -->
+<ul class="pager nomargin">
+  {% if paginator.previous_page %}
+    <li class="previous"><a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous page</a></li>
+  {% else %}
+    <li class="previous disabled"><a href="#">&larr; Previous page</a></li>
+  {% endif %}
+  <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+  {% if paginator.next_page %}
+    <li class="next"><a href="{{ paginator.next_page_path }}" class="next">Next page &rarr;</a></li>
+  {% else %}
+    <li class="next disabled "><a href="#">Next &rarr;</a></li>
+  {% endif %}
+                            </ul>
+
+</div>
+
+
+	
+
+
+
+

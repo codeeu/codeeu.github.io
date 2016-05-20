@@ -2,6 +2,10 @@ name: Europe Code Week
 markdown: kramdown
 highlighter: rouge
 
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "/news/page:num/"
+
 contact:
     email: info@codeweek.eu
     twitter: CodeWeekEU

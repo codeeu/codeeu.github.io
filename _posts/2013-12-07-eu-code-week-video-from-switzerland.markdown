@@ -3,6 +3,7 @@ layout: post
 title:  "EU Code Week video from Switzerland"
 date:   2013-12-07 15:56:13
 categories: news
+video: https://player.vimeo.com/video/81186435
 ---
 
 [GEMS World Academy in Etoy](http://www.gemsworldacademy-etoy.com/), Switzerland really embraced Europe Code Week in a big way. You can read more about how they used [Hopscotch](https://www.gethopscotch.com), an iPad app similar to [Scratch](http://scratch.mit.edu), to introduce coding to kids in a fun way on the [Learning Freewheel blog](http://learningfreewheel.wordpress.com/the-wardrobe/). The best part? It was also the kids teaching their teachers how to use the new tools!

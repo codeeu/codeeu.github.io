@@ -3,6 +3,7 @@ layout: post
 title:  "Best moments of the final #codeEU day: everyone codes!"
 date:   2013-11-30 23:59:59
 categories: news
+video: https://www.youtube.com/embed/Wx_N71Cw4BE?rel=0
 ---
 
 It's getting hard to believe that we reached the final day of the first ever Europe Code Week. It's been so exciting to see your smiles from all corners of Europe. So exciting that we really hope you won't stop learning and sending us your coding moments just because Code Week is over. 

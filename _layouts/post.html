@@ -1,13 +1,93 @@
 ---
-layout: header
+layout: default
 ---
 
-<section class="content post wrap">
-	<div class="post-info">
-		<div class="alert alert-danger">Note: This is an <strong>archive</strong> of news from the first Code Week. Visit our <a href="http://blog.codeweek.eu/">new blog</a> for the latest updates.</div>
+<!-- Page Title -->
+<section id="page-title">
+	<div class="container clearfix">
 		<h1>{{ page.title }}</h1>
-		<span>Published on {{ page.date | date_to_string }}</span>
+		<span>CodeWeekEU2016</span>
+		<ol class="breadcrumb">
+			<li><a href="http://codeweek.eu">Home</a></li>
+            <li><a href="http://codeweek.eu/news">News</a></li>
+			<li class="active">{{ page.title }}</li>
+		</ol>
 	</div>
+</section>
+<!-- #page-title end -->
+<!-- Content -->
 
-	{{ content }}
+<section id="content">
+	<div class="content-wrap">
+		<div class="container clearfix">
+
+
+					<!-- Post Content
+					============================================= -->
+					<div class="postcontent nobottommargin clearfix">
+
+						<div class="single-post nobottommargin">
+
+							<!-- Single Post
+							============================================= -->
+							<div class="entry clearfix">
+
+								<!-- Entry Image
+								============================================= -->
+								<div class="entry-image">
+									<a href="#"><img src=" {{ page.img }} " alt=""></a>
+								</div><!-- .entry-image end -->
+
+                                		<!-- Entry Title
+								============================================= -->
+								<div class="entry-title">
+									<h2>{{ page.title }}</h2>
+								</div><!-- .entry-title end -->
+
+								<!-- Entry Meta
+								============================================= -->
+								<ul class="entry-meta clearfix">
+									<li><i class="icon-calendar3"></i> {{ page.date | date_to_string }} </li>
+								</ul><!-- .entry-meta end -->
+                                
+								<!-- Entry Content
+								============================================= -->
+								<div class="entry-content notopmargin">
+{{ content }}
+
+									<!-- Post Single - Content End -->
+<!-- Tag Cloud
+									============================================= -->
+									<div class="tagcloud clearfix bottommargin">
+                                        
+                                    {% for tag in page.tags %}
+										<a href="#">{{ tag }}</a>
+                                    {% endfor %}
+									</div><!-- .tagcloud end -->
+
+									<div class="clear"></div>
+
+
+								</div>
+							</div><!-- .entry end -->
+
+
+
+
+
+
+						</div>
+
+					</div><!-- .postcontent end -->
+
+					<!-- Sidebar
+					============================================= -->
+					<div class="sidebar nobottommargin col_last clearfix">
+						<div class="sidebar-widgets-wrap">
+                            
+                        </div>
+            </div>
+        
+        </div>
+	</div>
 </section>

@@ -3,6 +3,7 @@ layout: post
 title:  "Europe Code Week 2013 celebrated with 300 #codeEU events [infographic]"
 date:   2013-12-01 08:05:10
 categories: news
+img: http://thumbnails.visually.netdna-cdn.com/EuropeCodeWeek2013_529a8276b1f9e_w587.png
 ---
 
  #codeEU was officially a big success for Europe! To wrap up this amazing week in style, we decided to prepare a small <a href="http://visual.ly/europe-code-week-2013">infographic</a> with key facts and some highlights of this year's Europe Code Week. Thanks everyone for making it such a great success! We hope you'll also join us next year.

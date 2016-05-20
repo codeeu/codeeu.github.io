@@ -3,6 +3,7 @@ layout: post
 title:  "Save the date: Europe Code Week returns from October 11 to 17, 2014"
 date:   2014-02-10 13:30:13
 categories: news
+img: /img/codeEU-2014-banner-s.jpg
 ---
 
 Last year it took just one month to organize [300 events](http://codeweek.eu/news/2013/12/01/europe-code-week-2013-infographic.html) for the first ever Europe Code Week. 10,000 participants of all ages in 26 European countries learned about coding at workshops and lectures organized by schools, universities and countless volunteers. This year we want to go even bigger. And we need your help to get Europe coding again from **October 11 to 17, 2014**.
