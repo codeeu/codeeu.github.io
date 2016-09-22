@@ -53,7 +53,7 @@ You can then edit your profile specifying (at least) the country.
 
 
 ###To edit Privacy page:
-- Go to [privacy/index.html](../privacy/index.html)
+- Go to [privacy/index.html](/privacy/index.html)
 
 
 ###To edit Website Under Maintenance page:
