@@ -45,11 +45,11 @@ You can then edit your profile specifying (at least) the country.
 
 
 ###To edit the About page:
-- Go to ../about/index.htm
+- Go to [about/index.html](/about/index.html)
 
 
 ###To edit the CodeWeek4All page:
-- Go to ../codeweek4all/index.html
+- Go to [codeweek4all/index.html](/codeweek4all/index.html)
 
 
 ###To edit Privacy page:
@@ -57,10 +57,10 @@ You can then edit your profile specifying (at least) the country.
 
 
 ###To edit Website Under Maintenance page:
-- To ro ../sorry/index.html
+- Go to [sorry/index.html](/sorry/index.html)
 
 ###To add Resources:
-- Go to ../resources/[your country name]/index.html
+- Go to [resources/[your country name]/index.html](/resources)
 
 
 Thank you for contributing.
