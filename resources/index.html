@@ -7,74 +7,76 @@ title: Resources and guides
 
 <h2>Presentations and toolkits</h2>
 <ul>
-	<li>Presentation of EU Code Week 2016. (<a href="./docs/EUCodeWeek2016.pdf">PDF</a>, <a href="./docs/EUCodeWeek2016.pptx">PPTX</a>)</li>
-    <li>Toolkit: how to organise a Europe Code Week event. (<a href="./docs/Howtoorganiseyourownevent2016.pdf">PDF</a>, <a href="./docs/Howtoorganiseyourownevent2016.docx">DOCX</a>)</li>
-	<li><a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-in-the-classroom-teacher-guide" target="_blank">Toolkit for teachers: how to engage your classroom in Europe Code Week</a></li>
-	<li><a href="http://www.slideshare.net/alessandrobogliolo/codeweek4all-challenge-guidelines-for-schools" target="_blank">Toolkit for schools: how to win the CodeWeek4all challenge</a></li>
-	<li><a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-worldwide-guide" target="_blank">Toolkit for worldwide event organizers: 6 steps in 1 slide</a></li>
-	<li><a href="https://www.slideshare.net/alessandrobogliolo/codeweekeu-2016-guidelines-for-librarians" target="_blank">Toolkit for Librarians prepared by PL2020</a></li>
+  <li>Presentation of EU Code Week 2016. (<a href="./docs/EUCodeWeek2016.pdf">PDF</a>, <a href="./docs/EUCodeWeek2016.pptx">PPTX</a>)</li>
+  <li>Toolkit: how to organise a Europe Code Week event. (<a href="./docs/Howtoorganiseyourownevent2016.pdf">PDF</a>, <a href="./docs/Howtoorganiseyourownevent2016.docx">DOCX</a>)</li>
+  <li>"Derek Breen's Digital Game Design from Scratch" (<a href="./docs/DGD-Scratch-Teacher-Guide-Abrdgd.pdf" target="_blank">curriculum guide</a>, <a href="https://www.youtube.com/playlist?list=PLOJbImijbLrTlg1ywLCOwesrZC14E5fuM" target="_blank">video playlist </a>) </li>
+  <li><a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-in-the-classroom-teacher-guide" target="_blank">Toolkit for teachers: how to engage your classroom in Europe Code Week</a></li>
+  <li><a href="http://www.slideshare.net/alessandrobogliolo/codeweek4all-challenge-guidelines-for-schools" target="_blank">Toolkit for schools: how to win the CodeWeek4all challenge</a></li>
+  <li><a href="http://www.slideshare.net/alessandrobogliolo/europe-code-week-worldwide-guide" target="_blank">Toolkit for worldwide event organizers: 6 steps in 1 slide</a></li>
+  <li><a href="https://www.slideshare.net/alessandrobogliolo/codeweekeu-2016-guidelines-for-librarians" target="_blank">Toolkit for Librarians prepared by PL2020</a></li>
 </ul>
 
 <h2>Local resources in your language</h2>
 
 <div id="country-list">
-	{% for cat in site.country-list-2014 %}
-		<strong>{% if cat == "czech_republic" %}
-			<a href="{{ cat }}" title="List of coding resources from Czech Republic">Czech Republic</a>
-		{% elsif cat == "isle_of_man" %}
-			<a href="{{ cat }}" title="List of coding resources from the Isle of Man">Isle of Man</a>
-		{% elsif cat == "united_kingdom" %}
-			<a href="{{ cat }}" title="List of coding resources from United Kingdom">United Kingdom</a>
-		{% else %}
-			<a href="{{ cat }}" title="List of coding resources from {{ cat | capitalize }}">{{ cat | capitalize }}</a>
-		{% endif %}</strong>{% unless forloop.last %} - {% endunless %}
-	{% endfor %}
+  {% for cat in site.country-list-2014 %}
+    <strong>{% if cat == "czech_republic" %}
+      <a href="{{ cat }}" title="List of coding resources from Czech Republic">Czech Republic</a>
+    {% elsif cat == "isle_of_man" %}
+      <a href="{{ cat }}" title="List of coding resources from the Isle of Man">Isle of Man</a>
+    {% elsif cat == "united_kingdom" %}
+      <a href="{{ cat }}" title="List of coding resources from United Kingdom">United Kingdom</a>
+    {% else %}
+      <a href="{{ cat }}" title="List of coding resources from {{ cat | capitalize }}">{{ cat | capitalize }}</a>
+    {% endif %}</strong>{% unless forloop.last %} - {% endunless %}
+  {% endfor %}
 </div>
 
 <hr />
 
 <h2>Coding lessons for beginners of all ages</h2>
 <ul>
-	<li><strong><a href="http://scratch.mit.edu/odetocode/" target="_blank">Scratch ode to code</a></strong>: Multilingual Scratch tutorial for Europe Code Week</li>
-	<li><strong><a href="http://www.codecademy.com" target="_blank">Codecademy</a></strong>: Learn to code interactively, for free, on the web.</li>
-	<li><strong><a href="https://www.codeschool.com" target="_blank">Code School</a></strong>: Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts.</li>
-	<li><strong><a href="http://www.codeavengers.com" target="_blank">Code Avengers</a></strong>: Learn to build websites, apps and games with HTML, CSS and JavaScript.</li>
-	<li><strong><a href="http://code.org/learn" target="_blank">Code.org Tutorials</a></strong>: Simple tutorials for beginners that can be completed in an hour or less.</li>
-	<li><strong><a href="http://csunplugged.org" target="_blank">Computer Science Unplugged</a></strong>: A collection of free learning activities for the classroom or home that teaches Computer Science through engaging games and puzzles that use cards, string, crayons and lots of running around.</li>
-	<li><strong><a href="http://www.funlearning.com" target="_blank">Angry Birds Fun Learning</a></strong>: Learn to code the fun way! Discover fun coding apps and courses for various difficulty levels.</li>
-	<li><strong><a href="https://webmaker.org/" target="_blank">Webmaker Web Literacy Map</a></strong>: A collection of resources for teaching and learning digital skills and web literacy, including a section on creating for the web.</li>
-	<li><strong><a href="http://www.w3schools.com" target="_blank">W3Schools Online Web Tutorials</a></strong>: A collection of tutorials and references for web-related languages.</li>
-	<li><strong><a href="http://www.academy-of-code.com/en" target="_blank">Academy of Code</a></strong>: A collection of free interactive tutorials for HTML, CSS, JavaScript, PHP and MySQL.</li>
-	<li><strong><a href="http://www.codingame.com" target="_blank">CodinGame</a></strong>: Play video games using code, learn programming in more than 20 programming languages.</li>
-	<li><strong><a href="http://silentteacher.toxicode.fr" target="_blank">Silent Teacher</a></strong>: a step by step and funny way to learn the basics.</li>
-	<li><strong><a href="https://codecombat.com" target="_blank">CodeCombat</a></strong>: an online game that teaches programming. Students write code in real programming languages (Python, JavaScript, Lua, CofeeScript, Clojure).</li>
-	<li><strong><a href="http://codespells.org" target="_blank">CodeSpells</a></strong> revolves around the idea of crafting your own magical spells to interact with the world, solve problems, and fight off foe.</li>
-	<li><strong><a href="http://codeweek.it/codyroby/" target="_blank">CodyRoby</a></strong>: Unplugged do-it-yourself card games and activities.</li>
-	<li><strong><a href="http://www.allyouneediscode.eu/en/lesson-plans" target="_blank">Lesson plans for teachers</a></strong>: Lesson plans created to help primary and secondary education teachers introduce coding to students. They will make pupils understand coding concepts in a fun way and offer teachers many ideas and resources.</li>
-	<li><strong><a href="http://www.europeanschoolnetacademy.eu/web/introducing-computing-in-your-classroom" target="_blank">Introducing computing in the classroom, by EU Schoolnet</a></strong>: Course designed by teachers for teachers which features interviews, presentations, and activities from teachers, professors, students and computing professionals.
+  <li><strong><a href="http://scratch.mit.edu/odetocode/" target="_blank">Scratch ode to code</a></strong>: Multilingual Scratch tutorial for Europe Code Week</li>
+  <li><strong><a href="http://www.codecademy.com" target="_blank">Codecademy</a></strong>: Learn to code interactively, for free, on the web.</li>
+  <li><strong><a href="https://www.codeschool.com" target="_blank">Code School</a></strong>: Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts.</li>
+  <li><strong><a href="http://www.codeavengers.com" target="_blank">Code Avengers</a></strong>: Learn to build websites, apps and games with HTML, CSS and JavaScript.</li>
+  <li><strong><a href="http://code.org/learn" target="_blank">Code.org Tutorials</a></strong>: Simple tutorials for beginners that can be completed in an hour or less.</li>
+  <li><strong><a href="http://csunplugged.org" target="_blank">Computer Science Unplugged</a></strong>: A collection of free learning activities for the classroom or home that teaches Computer Science through engaging games and puzzles that use cards, string, crayons and lots of running around.</li>
+  <li><strong><a href="http://www.funlearning.com" target="_blank">Angry Birds Fun Learning</a></strong>: Learn to code the fun way! Discover fun coding apps and courses for various difficulty levels.</li>
+  <li><strong><a href="https://webmaker.org/" target="_blank">Webmaker Web Literacy Map</a></strong>: A collection of resources for teaching and learning digital skills and web literacy, including a section on creating for the web.</li>
+  <li><strong><a href="http://www.w3schools.com" target="_blank">W3Schools Online Web Tutorials</a></strong>: A collection of tutorials and references for web-related languages.</li>
+  <li><strong><a href="http://www.test4u.eu/en/codeweek" target="_blank">TEST4U</a></strong>: A collection of interactive tutorials for HTML, CSS, JavaScript, PHP and MySQL.</li>
+  <li><strong><a href="http://www.codingame.com" target="_blank">CodinGame</a></strong>: Play video games using code, learn programming in more than 20 programming languages.</li>
+  <li><strong><a href="http://silentteacher.toxicode.fr" target="_blank">Silent Teacher</a></strong>: a step by step and funny way to learn the basics.</li>
+  <li><strong><a href="https://codecombat.com" target="_blank">CodeCombat</a></strong>: an online game that teaches programming. Students write code in real programming languages (Python, JavaScript, Lua, CofeeScript, Clojure).</li>
+  <li><strong><a href="http://codespells.org" target="_blank">CodeSpells</a></strong> revolves around the idea of crafting your own magical spells to interact with the world, solve problems, and fight off foe.</li>
+  <li><strong><a href="http://codeweek.it/codyroby/" target="_blank">CodyRoby</a></strong>: Unplugged do-it-yourself card games and activities.</li>
+  <li><strong><a href="http://www.allyouneediscode.eu/en/lesson-plans" target="_blank">Lesson plans for teachers</a></strong>: Lesson plans created to help primary and secondary education teachers introduce coding to students. They will make pupils understand coding concepts in a fun way and offer teachers many ideas and resources.</li>
+  <li><strong><a href="http://www.europeanschoolnetacademy.eu/web/introducing-computing-in-your-classroom" target="_blank">Introducing computing in the classroom, by EU Schoolnet</a></strong>: Course designed by teachers for teachers which features interviews, presentations, and activities from teachers, professors, students and computing professionals.
+>>>>>>> Add Derek's Scratch resources.
 </li>
 </ul>
 
 <h2>Coding for younger beginners</h2>
 
 <ul>
-	<li><strong><a href="http://scratch.mit.edu/" target="_blank">Scratch</a></strong>: With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community. Primarily designed for 8 to 16 year olds, available in a variety of languages, can be used <a href="http://scratch.mit.edu/projects/editor/?tip_bar=getStarted" target="_blank">online</a> or offline with the <a href="http://scratch.mit.edu/scratch2download/" target="_blank">Scratch editor</a> on Mac, Windows and Linux computers. Teachers should visit <a href="http://scratch-ed.org/" target="_blank">ScratchED</a>, an online community where Scratch educators share stories, exchange resources, ask questions, and find people.</li>
-	<li><strong><a href="https://www.gethopscotch.com" target="_blank">Hopscotch</a></strong>: iPad app recommended for kids ages 8 and above with simple, intuitive building blocks that can be used to create games, animations and apps in a colorful, interactive environment. Even younger coders can also try the <strong><a href="http://www.daisythedinosaur.com" target="_blank">Daisy the Dinosaur</a></strong> app.</li>
-	<li><strong><a href="http://www.scratchjr.org/" target="_blank">ScratchJr</a></strong>: ScratchJr is an introductory programming language that enables young children (ages 5 to 7) to create their own interactive stories and games. ScratchJr was inspired by Scratch, but redesigned the interface and programming language to make them developmentally appropriate for younger children. Currently available as an iPad app, with an Android version scheduled to be released later in 2014, and a web-based version in 2015.</li>
-	<li><strong><a href="https://coderdojo.com" target="_blank">CoderDojo</a></strong>: The CoderDojo website features a variety of information for parents, kids and volunteers looking to start their own coding club for children. Part of the website is also a list of <a href="http://kata.coderdojo.com/wiki/Main_Page" target="_blank">resources</a> that can be used to teach a variety of programming languages to different age groups.</li>
-	<li><strong><a href="https://www.robomindacademy.com/" target="_blank">RoboMind Academy</a></strong>: By programming a virtual robot, the student is introduced to logic, automation and technology. Available as an online educator-friendly platform that can be used with students aged 8 years or older. A good start is the <a href="https://www.robomindacademy.com//go/navigator/coursedetails?course=HourOfCode" target="_blank">Hour of Code Tutorial</a>.</li>
-	<li><strong><a href="https://www.allcancode.com" target="_blank">Run Marco!</a></strong>: an adventure game for kids that teaches the basic of coding. Available as a browser game and an <a href="https://play.google.com/store/apps/details?id=com.allcancode.runmarco" target="_blank">Android app</a>, already translated in 13 European languages (more coming soon).</li>
-	<li><strong><a href="https://pocketcode.org" target="_blank">Pocket Code</a></strong>: An Android app that allows you to create your own games, animations, interactive music videos, and other kinds of apps, directly on your phone or tablet. An easy way to get started is the <a href="https://pocketcode.org/hourOfCode" target="_blank">Skydiving Steve</a> hour of code tutorial. Or you can follow Horst's <a href="http://spielend-programmieren.at/blog/20161008_scannerapp.html">step-by-step tutorial</a> to transform your smartphone into an scanner for alien lifeforms.</li>
-	<li><strong><a href="http://www.kodugamelab.com/" target="_blank">Kodu</a></strong>: Kodu lets kids create games via a simple visual programming language. Kodu can be used to teach creativity, problem solving, storytelling, as well as programming. Available for Windows computers.</li>
-	<li><strong><a href="https://www.playcodemonkey.com" target="_blank">CodeMonkey</a></strong>: CodeMonkey is a fun online game that teaches you how to code. In this free technology and STEM game, students learn about computer coding concepts like functions and loops by programming a monkey to find bananas! Real world programming language. Write code. Catch bananas. Save the world.</li>
-	<li><strong><a href="http://codeweek.it/codyroby/" target="_blank">CodyRoby</a></strong>: Unplugged games and activities.</li>
+  <li><strong><a href="http://scratch.mit.edu/" target="_blank">Scratch</a></strong>: With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community. Primarily designed for 8 to 16 year olds, available in a variety of languages, can be used <a href="http://scratch.mit.edu/projects/editor/?tip_bar=getStarted" target="_blank">online</a> or offline with the <a href="http://scratch.mit.edu/scratch2download/" target="_blank">Scratch editor</a> on Mac, Windows and Linux computers. Teachers should visit <a href="http://scratch-ed.org/" target="_blank">ScratchED</a>, an online community where Scratch educators share stories, exchange resources, ask questions, and find people.</li>
+  <li><strong><a href="https://www.gethopscotch.com" target="_blank">Hopscotch</a></strong>: iPad app recommended for kids ages 8 and above with simple, intuitive building blocks that can be used to create games, animations and apps in a colorful, interactive environment. Even younger coders can also try the <strong><a href="http://www.daisythedinosaur.com" target="_blank">Daisy the Dinosaur</a></strong> app.</li>
+  <li><strong><a href="http://www.scratchjr.org/" target="_blank">ScratchJr</a></strong>: ScratchJr is an introductory programming language that enables young children (ages 5 to 7) to create their own interactive stories and games. ScratchJr was inspired by Scratch, but redesigned the interface and programming language to make them developmentally appropriate for younger children. Currently available as an iPad app, with an Android version scheduled to be released later in 2014, and a web-based version in 2015.</li>
+  <li><strong><a href="https://coderdojo.com" target="_blank">CoderDojo</a></strong>: The CoderDojo website features a variety of information for parents, kids and volunteers looking to start their own coding club for children. Part of the website is also a list of <a href="http://kata.coderdojo.com/wiki/Main_Page" target="_blank">resources</a> that can be used to teach a variety of programming languages to different age groups.</li>
+  <li><strong><a href="https://www.robomindacademy.com/" target="_blank">RoboMind Academy</a></strong>: By programming a virtual robot, the student is introduced to logic, automation and technology. Available as an online educator-friendly platform that can be used with students aged 8 years or older. A good start is the <a href="https://www.robomindacademy.com//go/navigator/coursedetails?course=HourOfCode" target="_blank">Hour of Code Tutorial</a>.</li>
+  <li><strong><a href="https://www.allcancode.com" target="_blank">Run Marco!</a></strong>: an adventure game for kids that teaches the basic of coding. Available as a browser game and an <a href="https://play.google.com/store/apps/details?id=com.allcancode.runmarco" target="_blank">Android app</a>, already translated in 13 European languages (more coming soon).</li>
+  <li><strong><a href="https://pocketcode.org" target="_blank">Pocket Code</a></strong>: An Android app that allows you to create your own games, animations, interactive music videos, and other kinds of apps, directly on your phone or tablet. An easy way to get started is the <a href="https://pocketcode.org/hourOfCode" target="_blank">Skydiving Steve</a> hour of code tutorial. Or you can follow Horst's <a href="http://spielend-programmieren.at/blog/20161008_scannerapp.html">step-by-step tutorial</a> to transform your smartphone into an scanner for alien lifeforms.</li>
+  <li><strong><a href="http://www.kodugamelab.com/" target="_blank">Kodu</a></strong>: Kodu lets kids create games via a simple visual programming language. Kodu can be used to teach creativity, problem solving, storytelling, as well as programming. Available for Windows computers.</li>
+  <li><strong><a href="https://www.playcodemonkey.com" target="_blank">CodeMonkey</a></strong>: CodeMonkey is a fun online game that teaches you how to code. In this free technology and STEM game, students learn about computer coding concepts like functions and loops by programming a monkey to find bananas! Real world programming language. Write code. Catch bananas. Save the world.</li>
+  <li><strong><a href="http://codeweek.it/codyroby/" target="_blank">CodyRoby</a></strong>: Unplugged games and activities.</li>
         <li><strong><a href="http://www.icode.iteach-uk.com" target="_blank">iCode from iTeach</a></strong>: iCode is an initiative created by iTeach to provide schools with a structured programme to run a coding and programming club as an after school, extra curricular activity or as a structured programme within the school day.</li>
 </ul>
 
 <h2>Full online courses for advanced learners</h2>
 <ul>
-	<li><strong><a href="https://www.edx.org/course-list/allschools/computer-science/allcourses" target="_blank">edX</a></strong>: EdX offers interactive online classes and MOOCs from the world’s best universities. Online courses from MITx, HarvardX, BerkeleyX, UTx and many other universities.</li>
-	<li><strong><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">MIT OpenCourseWare</a></strong>: MIT OpenCourseWare (OCW) is a web-based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity.</li>
-	<li><strong><a href="https://www.coursera.org/courses?orderby=upcoming&cats=cs-programming" target="_blank">Coursera</a></strong>: Coursera is an education platform that partners with top universities and organizations worldwide, to offer courses online for anyone to take, for free.</li>
-	<li><strong><a href="https://www.udacity.com/courses#!/all" target="_blank">Udacity</a></strong>: Online education that bridges the gap between academic and real world skills. Taught by industry leaders excited to share their expertise from companies such as Google, Facebook, Cloudera, and MongoDB.</li>
+  <li><strong><a href="https://www.edx.org/course-list/allschools/computer-science/allcourses" target="_blank">edX</a></strong>: EdX offers interactive online classes and MOOCs from the world’s best universities. Online courses from MITx, HarvardX, BerkeleyX, UTx and many other universities.</li>
+  <li><strong><a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/" target="_blank">MIT OpenCourseWare</a></strong>: MIT OpenCourseWare (OCW) is a web-based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity.</li>
+  <li><strong><a href="https://www.coursera.org/courses?orderby=upcoming&cats=cs-programming" target="_blank">Coursera</a></strong>: Coursera is an education platform that partners with top universities and organizations worldwide, to offer courses online for anyone to take, for free.</li>
+  <li><strong><a href="https://www.udacity.com/courses#!/all" target="_blank">Udacity</a></strong>: Online education that bridges the gap between academic and real world skills. Taught by industry leaders excited to share their expertise from companies such as Google, Facebook, Cloudera, and MongoDB.</li>
 </ul>
